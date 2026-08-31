@@ -8,19 +8,46 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes patrol {
+  from { transform: translate(0, 0) rotate(0deg) scale(1); }
+  to   { transform: translate(425%, 42%) rotate(360deg) scale(1.01); }
+}
+
+.animate-patrol {
+  animation: patrol 4s cubic-bezier(0.44, 0, 0.56, 1) infinite alternate;
+}
+
+@keyframes patrol-card {
+  from { transform: translate(0, 0) rotate(360deg) scale(1); }
+  to   { transform: translate(-400%, 0) rotate(0deg) scale(1.01); }
+}
+
+.animate-patrol-card {
+  animation: patrol-card 4s cubic-bezier(0.44, 0, 0.56, 1) infinite alternate;
+}
+
+@keyframes levitate {
+  from { transform: translateY(0) scale(1); }
+  to   { transform: translateY(-5px) scale(1.02); }
+}
+
+.animate-levitate {
+  animation: levitate 2s cubic-bezier(0.44, 0, 0.56, 1) infinite alternate;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
 }

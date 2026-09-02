@@ -12,6 +12,7 @@ import {
   StatRow,
   Feature,
   Shot,
+  Clip,
   DecisionGrid,
 } from "../../components/CaseStudy";
 
@@ -246,7 +247,7 @@ export default function FailureMuseumPage() {
               filled={false}
             />
 
-            <Shot src="/projects/fm-login.svg" alt="Failure Museum login" />
+            <Clip src="/projects/fm_vid1.mp4" />
 
             <Feature
               label="OPEN AN EXHIBIT"
@@ -255,7 +256,7 @@ export default function FailureMuseumPage() {
               filled={false}
             />
 
-            <Shot src="/projects/fm-feed.svg" alt="Exhibit feed" />
+            <Clip src="/projects/fm_vid2.mp4" />
 
             <Feature
               label="CREATE YOUR OWN"
@@ -263,7 +264,7 @@ export default function FailureMuseumPage() {
               pill="Creation"
             />
 
-            <Shot src="/projects/fm-create.svg" alt="Creating an exhibit" />
+            <Clip src="/projects/fm_vid3.mp4" />
           </Section>
 
           <Section id="design">

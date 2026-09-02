@@ -291,3 +291,26 @@ export function Step({
         </div>
     )
 }
+
+export function Clip({ src, caption }: { src: string; caption?: string }) {
+    return (
+        <div className="mt-8">
+            <video
+                src={src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="mx-auto w-full max-w-[600px] rounded-[14px]"
+            />
+            {caption && (
+                <p
+                    className="mt-3 text-center text-[13px]"
+                    style={{ fontFamily: mono, color: "#000000" }}
+                >
+                    {caption}
+                </p>
+            )}
+        </div>
+    )
+}

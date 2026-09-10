@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# sumkhalid.me
 
-## Getting Started
+My personal portfolio, rebuilt from scratch in Next.js after I first made it in Framer. It has a cozy, Ghibli-inspired look with a few small interactive pieces hidden around the pages.
 
-First, run the development server:
+**Live site:** https://sumkhalid.me
+
+## What's on the site
+
+- An intro screen with a twinkling starfield that explodes into the home page when you click in
+- A desktop-style layout built from window components, plus a live clock and a Ghibli TV you can flip through
+- A No-Face guessing game (with sound effects when you win)
+- Pages for my CS projects, UX case studies (Echo, GreenBuddies, The Failure Museum), an about page, and my resume
+
+## Built with
+
+Next.js (App Router), React, TypeScript, Tailwind CSS, and Motion for animations. Hosted on Vercel, and every push to `main` deploys automatically.
+
+## How I built it
+
+The design started in Framer. I used an AI coding agent to help translate it into code, then went through the generated components myself and fixed the places where they didn't match the original design. The UI is split into reusable components in `app/components`.
+
+## Running it locally
 
 ```bash
+git clone https://github.com/SumayyahKhalid/portfolio.git
+cd portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+app/
+  components/    reusable UI pieces (windows, intro, game, clock)
+  home/          main page after the intro
+  about-me/
+  cs-projects/
+  ux-projects/   case study pages
+  resume/
+public/          images, audio, and resume PDF
+```

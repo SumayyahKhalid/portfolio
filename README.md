@@ -1,15 +1,8 @@
 # sumkhalid.me
 
-My personal portfolio, rebuilt from scratch in Next.js after I first made it in Framer. It has a cozy, Ghibli-inspired look with a few small interactive pieces hidden around the pages.
+My personal portfolio, rebuilt from scratch in Next.js. It has a cozy, Ghibli-inspired look with a few small interactive pieces hidden around the pages.
 
 **Live site:** https://sumkhalid.me
-
-## What's on the site
-
-- An intro screen with a twinkling starfield that explodes into the home page when you click in
-- A desktop-style layout built from window components, plus a live clock and a Ghibli TV you can flip through
-- A No-Face guessing game (with sound effects when you win)
-- Pages for my CS projects, UX case studies (Echo, GreenBuddies, The Failure Museum), an about page, and my resume
 
 ## Built with
 

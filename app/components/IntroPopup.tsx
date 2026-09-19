@@ -1,9 +1,10 @@
 import Image from "next/image"
 import { Minus, Square, X } from "lucide-react"
+import SoundLink from "./SoundLink"
 
 export default function IntroPopup() {
     return (
-        <div className="relative z-10 px-8 pt-6 md:absolute md:right-8 md:top-16 md:w-[545px] md:px-0">
+        <div className="relative z-10 px-8 pt-6 md:absolute md:right-12 md:top-12 md:w-[545px] md:px-0">
             <div
                 style={{
                     background: "#f8f3cf",
@@ -55,7 +56,7 @@ export default function IntroPopup() {
                             color: "#000000",
                         }}
                     >
-                        SOFTWARE | DEVELOPER | PRODUCT | DESIGNER
+                        PRODUCT | UX DESIGNER
                     </h2>
 
                     <p
@@ -69,10 +70,26 @@ export default function IntroPopup() {
                     >
                         Hello, I&apos;m Sumayyah!
                         <br />
-                        A CS + UX Design student @ WLU who bridges{" "}
-                        <strong>design</strong> and <strong>technology</strong>{" "}
-                        to craft intuitive, human-centred experiences.
+                        A CS + UX design student @ WLU, which means I design
+                        something and then can&apos;t stop myself from building
+                        it. Currently looking for new opportunities!
                     </p>
+
+                    <div className="mt-4 flex flex-wrap gap-3">
+                        <SoundLink
+                            href="/ux-projects"
+                            className="inline-block rounded-[10px] border border-black bg-[#DAD0B5] px-5 py-2 font-[family-name:var(--font-inconsolata)] text-[13px] font-bold text-black transition-transform duration-300 ease-out hover:scale-105"
+                        >
+                            See my work →
+                        </SoundLink>
+
+                        <SoundLink
+                            href="/about-me"
+                            className="inline-block rounded-[10px] border border-black bg-transparent px-5 py-2 font-[family-name:var(--font-inconsolata)] text-[13px] font-bold text-black transition-transform duration-300 ease-out hover:scale-105 hover:bg-[#DAD0B5]"
+                        >
+                            Who&apos;s the No-Face?
+                        </SoundLink>
+                    </div>
                 </div>
             </div>
         </div>

@@ -40,7 +40,7 @@ export default function UXProjectsPage() {
   return (
     <DesktopChrome>
       <DesktopWindow
-        title="UX Projects"
+        title="Work"
         icon="/icons/ux-projects.svg"
         fullHeight
         className="mx-4 my-6 md:ml-[190px] md:mr-[6%] md:my-[4vh] md:mb-[8vh] md:h-[calc(100vh-12vh-26px)]"
@@ -74,12 +74,12 @@ export default function UXProjectsPage() {
             </div>
 
             <div className={card}>
-              <ProjectImage
+              <Image
                 src="/projects/echo.svg"
                 alt="Echo"
                 width={860}
                 height={880}
-                href="/ux-projects/echo"
+                className="w-full rounded-[10px]"
               />
               <div
                 className="mt-4 flex flex-wrap justify-start gap-3"
@@ -125,13 +125,12 @@ export default function UXProjectsPage() {
                 <span className={tag}>Early Education</span>
                 <span className={tag}>July 2025</span>
               </div>
-              <ProjectImage
+              <Image
                 src="/projects/greenbuddies.svg"
                 alt="GreenBuddies"
                 width={860}
                 height={480}
-                className="mt-4"
-                href="/ux-projects/greenbuddies"
+                className="mt-4 w-full rounded-[10px]"
               />
               <h2 className="mt-4" style={headingStyle}>
                 GreenBuddies

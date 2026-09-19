@@ -17,9 +17,28 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const title = "Sumayyah Khalid — Product & UX Designer";
+const description =
+  "CS + UX design student at Wilfrid Laurier. I design products and build them too.";
+
 export const metadata: Metadata = {
-  title: "Sumayyah Khalid",
-  description: "Whimsical portfolio",
+  metadataBase: new URL("https://sumkhalid.me"),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "https://sumkhalid.me",
+    siteName: "Sumayyah Khalid",
+    images: [{ url: "/projects/failure-museum.png", width: 1200, height: 630 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/projects/failure-museum.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

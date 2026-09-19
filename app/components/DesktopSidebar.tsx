@@ -5,9 +5,8 @@ import { useEffect, useRef } from "react"
 import Link from "next/link"
 
 const items = [
-    { label: "Home", file: "home.svg", href: "/home" },
-    { label: "UX Projects", file: "ux-projects.svg", href: "/ux-projects" },
-    { label: "CS Projects", file: "cs-projects.svg", href: "/cs-projects" },
+    { label: "Home", file: "home.svg", href: "/" },
+    { label: "Work", file: "ux-projects.svg", href: "/work" },
     { label: "About Me", file: "about-me.svg", href: "/about-me" },
     { label: "Resume", file: "resume.svg", href: "/resume" },
 ]
@@ -17,7 +16,7 @@ export default function DesktopSidebar() {
 
     useEffect(() => {
         const a = new Audio("/click.mp3")
-        a.volume = 1
+        a.volume = 0.5
         a.preload = "auto"
         a.load()
         audioRef.current = a
@@ -33,7 +32,7 @@ export default function DesktopSidebar() {
     return (
         <div className="relative z-10 flex flex-row flex-wrap justify-center gap-5 px-4 pt-10 pb-4 md:absolute md:left-0 md:top-[26px] md:flex-col md:flex-nowrap md:justify-start md:gap-12 md:px-12 md:pt-12 md:pb-0">
             {items.map((item) => (
-              <Link
+                <Link
                     key={item.label}
                     href={item.href}
                     onClick={playClick}

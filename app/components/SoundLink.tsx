@@ -22,7 +22,7 @@ export default function SoundLink({
 
     useEffect(() => {
         const a = new Audio("/click.mp3")
-        a.volume = 1
+        a.volume = 0.5
         a.preload = "auto"
         a.load()
         audioRef.current = a

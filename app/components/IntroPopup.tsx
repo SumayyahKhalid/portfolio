@@ -77,7 +77,7 @@ export default function IntroPopup() {
 
                     <div className="mt-4 flex flex-wrap gap-3">
                         <SoundLink
-                            href="/ux-projects"
+                            href="/work"
                             className="inline-block rounded-[10px] border border-black bg-[#DAD0B5] px-5 py-2 font-[family-name:var(--font-inconsolata)] text-[13px] font-bold text-black transition-transform duration-300 ease-out hover:scale-105"
                         >
                             See my work →

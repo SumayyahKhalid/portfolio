@@ -14,7 +14,7 @@ export default function NoFaceGame() {
 
     useEffect(() => {
         const a = new Audio("/win.mp3")
-        a.volume = 0.6
+        a.volume = 0.5
         a.preload = "auto"
         a.load()
         winAudio.current = a

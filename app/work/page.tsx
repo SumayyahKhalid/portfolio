@@ -62,7 +62,7 @@ export default function UXProjectsPage() {
                 width={860}
                 height={620}
                 className="mt-4"
-                href="/ux-projects/failure-museum"
+                href="/work/failure-museum"
               />
               <div
                 className="mt-4 flex flex-wrap justify-end gap-3"

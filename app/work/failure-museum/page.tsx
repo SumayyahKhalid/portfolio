@@ -21,7 +21,7 @@ export default function FailureMuseumPage() {
     <DesktopChrome>
       <DesktopWindow
         title={
-          <SoundLink href="/ux-projects" className="flex items-center gap-3">
+          <SoundLink href="/work" className="flex items-center gap-3">
             <ArrowLeft size={22} strokeWidth={2.5} />
             Back.
           </SoundLink>

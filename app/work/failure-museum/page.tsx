@@ -9,6 +9,7 @@ import {
   SectionHeader,
   Body,
   Callout,
+  Insight,
   StatRow,
   Feature,
   Shot,
@@ -30,7 +31,7 @@ export default function FailureMuseumPage() {
         className="mx-4 my-6 md:ml-[190px] md:mr-[6%] md:my-[4vh] md:mb-[8vh] md:h-[calc(100vh-12vh-26px)]"
       >
         <div
-          className="py-6"
+          className="mx-auto max-w-[900px] px-6 py-6 md:px-0"
           style={
             {
               "--cs-fill": "#E6DCB8",
@@ -83,28 +84,57 @@ export default function FailureMuseumPage() {
           </div>
 
           <div
-            className="mt-8 rounded-[10px] px-6 py-5"
-            style={{
-              background: "var(--cs-fill)",
-              borderLeft: "4px solid var(--cs-accent)",
-            }}
+            className="mt-10 grid grid-cols-1 gap-x-12 gap-y-6 pt-6 md:grid-cols-[minmax(0,4fr)_minmax(0,8fr)]"
+            style={{ borderTop: "1px solid var(--cs-line)" }}
           >
-            <p
-              className="mb-2 text-[12px] font-bold tracking-wide"
-              style={{ fontFamily: "var(--font-open-sans)", color: "#000000" }}
-            >
-              MY ROLE
-            </p>
-            <p
-              className="text-[16px] leading-[1.7]"
-              style={{ fontFamily: "var(--font-open-sans)", color: "#000000" }}
-            >
-              Team Intuitiv was four of us, and we worked through most of this
-              together, from the research to the final screens. The pieces I
-              owned were <strong>prototyping</strong> and{" "}
-              <strong>branding</strong>. I also helped write and run our student
-              survey, and presented the final concept with the team.
-            </p>
+            <div>
+              <p
+                className="text-[12px] font-bold uppercase tracking-[0.14em]"
+                style={{
+                  fontFamily: "var(--font-inconsolata)",
+                  color: "var(--cs-accent)",
+                }}
+              >
+                Team Intuitiv
+              </p>
+              <ul
+                className="mt-3 space-y-1 text-[15px]"
+                style={{
+                  fontFamily: "var(--font-inconsolata)",
+                  color: "#000000",
+                }}
+              >
+                <li>Sumayyah Khalid</li>
+                <li>Amrit Nannar</li>
+                <li>Afeefa Malik</li>
+                <li>Victoria Leliveld</li>
+              </ul>
+            </div>
+
+            <div>
+              <p
+                className="text-[12px] font-bold uppercase tracking-[0.14em]"
+                style={{
+                  fontFamily: "var(--font-inconsolata)",
+                  color: "var(--cs-accent)",
+                }}
+              >
+                My Role
+              </p>
+              <p
+                className="mt-3 text-[16px] leading-[1.7]"
+                style={{
+                  fontFamily: "var(--font-open-sans)",
+                  color: "#000000",
+                }}
+              >
+                The four of us worked through most of this together, from the
+                research to the final screens. The pieces I owned were{" "}
+                <strong>prototyping</strong> and <strong>branding</strong>. I
+                also helped write and run our student survey, and presented the
+                final concept with the team.
+              </p>
+            </div>
           </div>
 
           <Section id="context">
@@ -198,7 +228,6 @@ export default function FailureMuseumPage() {
             </Body>
 
             <StatRow
-              filled={false}
               stats={[
                 {
                   value: "68%",
@@ -218,12 +247,11 @@ export default function FailureMuseumPage() {
               ]}
             />
 
-            <Callout label="KEY INSIGHT">
+            <Insight>
               The problem isn&apos;t that students use AI. It&apos;s that
               failure has become something to escape instead of something to
-              learn from. Students skip reflection because nothing in their
-              environment makes it feel worth doing.
-            </Callout>
+              learn from.
+            </Insight>
           </Section>
 
           <Section id="problem">
@@ -267,7 +295,7 @@ export default function FailureMuseumPage() {
               This is what we walked into our first mentor session with:
             </Body>
 
-            <Callout label="VERSION 1" filled={false}>
+            <Callout label="VERSION 1">
               Gen Z university students experience reduced confidence and eroded
               critical thinking skills when over relying on AI tools to complete
               independent academic work.
@@ -331,7 +359,6 @@ export default function FailureMuseumPage() {
               label="BROWSE THE GALLERY"
               text="A feed of other students’ exhibits across coding, writing, math, and productivity. Seeing confusion at scale is what makes it feel normal."
               pill="Discovery"
-              filled={false}
             />
 
             <Clip src="/projects/fm_vid1.mp4" />
@@ -340,7 +367,6 @@ export default function FailureMuseumPage() {
               label="OPEN AN EXHIBIT"
               text="Every post follows the same three parts: what someone believed, what changed, what they understand now. Thinking made visible."
               pill="Exploration"
-              filled={false}
             />
 
             <Clip src="/projects/fm_vid2.mp4" />

@@ -52,7 +52,7 @@ export default function CaseStudyNav({ items }: { items: Item[] }) {
     return (
         <div
             ref={navRef}
-            className="sticky top-0 z-20 -mx-4 px-4 py-3 md:-mx-6 md:px-6"
+            className="sticky top-0 z-20 py-3"
             style={{ background: "#f8f3cf" }}
         >
             <div

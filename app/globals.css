@@ -43,6 +43,15 @@ body {
   animation: levitate 2s cubic-bezier(0.44, 0, 0.56, 1) infinite alternate;
 }
 
+@keyframes float-card {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-5px); }
+}
+
+.animate-float-card {
+  animation: float-card 3s cubic-bezier(0.44, 0, 0.56, 1) infinite alternate;
+}
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }

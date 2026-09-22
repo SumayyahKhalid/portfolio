@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     description,
     url: "https://sumkhalid.me",
     siteName: "Sumayyah Khalid",
-    images: [{ url: "/projects/failure-museum.png", width: 1200, height: 630 }],
+    images: [{ url: "/og.png", width: 1200, height: 630}],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/projects/failure-museum.png"],
+    images: ["/og.png"],
   },
 };
 

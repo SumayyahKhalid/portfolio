@@ -54,7 +54,7 @@ export default function EchoPage() {
           />
 
           <Image
-            src="/projects/echo.svg"
+            src="/projects/echo-hero.webp"
             alt="Echo"
             width={1300}
             height={730}
@@ -253,17 +253,17 @@ export default function EchoPage() {
               columns={3}
               screens={[
                 {
-                  src: "/projects/echo-route.png",
+                  src: "/projects/echo-route.svg",
                   caption:
                     "Transport options and the route home, added after the mentor session",
                 },
                 {
-                  src: "/projects/echo-meetup.png",
+                  src: "/projects/echo-meetup.svg",
                   caption:
                     "Meetup spots near the venue, with distance and what each place is good for",
                 },
                 {
-                  src: "/projects/echo-gallery.png",
+                  src: "/projects/echo-gallery.svg",
                   caption:
                     "The Echo Gallery, where the night keeps going after you leave",
                 },
@@ -316,16 +316,16 @@ export default function EchoPage() {
             />
 
             <ScreenMarquee
-              speed={45}
+              speed={60}
               screens={[
-                { src: "/projects/echo-onboard-1.png" },
-                { src: "/projects/echo-onboard-2.png" },
-                { src: "/projects/echo-aura-gen.png" },
-                { src: "/projects/echo-aura-tags.png" },
-                { src: "/projects/echo-events.png" },
-                { src: "/projects/echo-match.png" },
-                { src: "/projects/echo-breakdown.png" },
-                { src: "/projects/echo-gallery.png" },
+                { src: "/projects/echo-onboard-1.svg" },
+                { src: "/projects/echo-onboard-2.svg" },
+                { src: "/projects/echo-aura-gen.svg" },
+                { src: "/projects/echo-aura-tags.svg" },
+                { src: "/projects/echo-events.svg" },
+                { src: "/projects/echo-match.svg" },
+                { src: "/projects/echo-breakdown.svg" },
+                { src: "/projects/echo-gallery.svg" },
               ]}
             />
           </Section>

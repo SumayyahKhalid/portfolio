@@ -55,13 +55,14 @@ export default function FailureMuseumPage() {
 
           {/* TODO_HERO: fm-hero.svg is a slide-deck screenshot with adjacent
               slides bleeding in on both edges. Replace with a clean product shot. */}
+          <div className="relative mt-4 aspect-[21/9] w-full overflow-hidden rounded-[14px]">
           <Image
-            src="/projects/fm-hero.svg"
-            alt="The Failure Museum"
-            width={1300}
-            height={730}
-            className="mt-4 w-full rounded-[14px]"
-          />
+              src="/projects/fm-hero.webp"
+              alt="The Failure Museum"
+              fill
+              className="object-cover"
+            />
+          </div>
 
           <div
             className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3"

@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 
+const POINTER = "url('/cursor-pointer.png') 12 4, pointer"
+
 export default function NoFaceGame() {
     const [correctIndex, setCorrectIndex] = useState(() =>
         Math.floor(Math.random() * 3)
@@ -68,7 +70,7 @@ export default function NoFaceGame() {
                         style={{
                             border: borderFor(i),
                             borderRadius: 12,
-                            cursor: guessed === null ? "pointer" : "default",
+                            cursor: guessed === null ? POINTER : "default",
                         }}
                         className={`p-2 transition-transform duration-300 ease-out ${
                             guessed === null
@@ -118,7 +120,7 @@ export default function NoFaceGame() {
                             fontFamily: "var(--font-inconsolata)",
                             fontWeight: 600,
                             fontSize: 12,
-                            cursor: "pointer",
+                            cursor: POINTER,
                             color: "#000000",
                         }}
                         className="transition-transform duration-300 ease-out hover:scale-105 active:scale-95"

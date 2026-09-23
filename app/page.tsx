@@ -36,12 +36,9 @@ export default function HomePage() {
           lineHeight: "1.2em",
         }}
       >
-        <SoundLink
-          href="/"
-          className="inline-block origin-left truncate transition-transform duration-300 ease-out hover:scale-105"
-        >
+        <span className="inline-block truncate">
           Sumayyah Khalid&apos;s Whimsical Portfolio
-        </SoundLink>
+        </span>
 
         <div className="flex items-center gap-3 shrink-0">
           <Bluetooth size={14} strokeWidth={2} className="hidden sm:block" />

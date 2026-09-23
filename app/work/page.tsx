@@ -18,10 +18,10 @@ export default function WorkPage() {
         <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-10 px-6 py-6 md:grid-cols-2 md:px-8">
           <div className="flex flex-col gap-10">
             <ProjectCard
-              src="/projects/echo.svg"
+              src="/projects/echo.webp"
               alt="Echo"
-              width={860}
-              height={880}
+              width={943}
+              height={847}
               title="Echo"
               description="Echo brings people back to real-life connection through music, helping users discover local events and meet others with similar tastes."
               tags={["Community", "March 2025"]}
@@ -29,10 +29,10 @@ export default function WorkPage() {
             />
 
             <ProjectCard
-              src="/projects/failure-museum.svg"
+              src="/projects/failure-museum.webp"
               alt="The Failure Museum"
-              width={860}
-              height={620}
+              width={943}
+              height={683}
               title="The Failure Museum"
               description="A space where academic mistakes are no longer hidden, but understood, turning moments of failure into opportunities for growth."
               tags={["3rd Place Winner", "March 2026"]}
@@ -58,10 +58,10 @@ export default function WorkPage() {
             </div>
 
             <ProjectCard
-              src="/projects/greenbuddies.svg"
+              src="/projects/greenbuddies.webp"
               alt="GreenBuddies"
-              width={860}
-              height={480}
+              width={943}
+              height={476}
               title="GreenBuddies"
               description="A gamified experience that motivates children to step outside, complete challenges, and build a deeper connection with the world around them."
               tags={["Early Education", "July 2025"]}

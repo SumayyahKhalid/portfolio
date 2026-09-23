@@ -4,7 +4,7 @@ import SoundLink from "./SoundLink"
 
 export default function IntroPopup() {
     return (
-        <div className="relative z-10 px-8 pt-6 md:absolute md:right-12 md:top-12 md:w-[545px] md:px-0">
+        <div className="relative z-10 px-8 pt-6 md:absolute md:right-10 md:top-10 md:w-[545px] md:px-0">
             <div
                 style={{
                     background: "#f8f3cf",

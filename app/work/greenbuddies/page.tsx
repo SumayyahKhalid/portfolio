@@ -12,7 +12,7 @@ import {
   Insight,
   StatRow,
   Feature,
-  Shot,
+  ScreenGrid,
   DecisionGrid,
 } from "../../components/CaseStudy";
 
@@ -53,10 +53,10 @@ export default function GreenBuddiesPage() {
           />
 
           <Image
-            src="/projects/greenbuddies.svg"
+            src="/projects/greenbuddies-hero.webp"
             alt="GreenBuddies"
-            width={1300}
-            height={730}
+            width={943}
+            height={847}
             className="mt-4 w-full rounded-[14px]"
           />
 
@@ -228,6 +228,27 @@ export default function GreenBuddiesPage() {
               rather than toward a better worksheet.
             </Body>
 
+            <ScreenGrid
+              columns={3}
+              screens={[
+                {
+                  src: "/projects/gb-home.svg",
+                  caption:
+                    "Icon-only tab bar so the app is navigable without reading",
+                },
+                {
+                  src: "/projects/gb-explorer-kit.svg",
+                  caption:
+                    "The Explorer Kit, including a voice memo for kids who'd rather talk than type",
+                },
+                {
+                  src: "/projects/gb-checklist.svg",
+                  caption:
+                    "Prompts stay short and visual: a yellow flower, a flower with four petals",
+                },
+              ]}
+            />
+
             <Callout label="HOW MIGHT WE">
               How might we help children build meaningful connections with
               nature and each other through playful, inclusive exploration,
@@ -238,24 +259,31 @@ export default function GreenBuddiesPage() {
           <Section id="ideate">
             <SectionHeader
               label="04.Ideation"
-              title="Eight ideas in ninety minutes"
-              intro="Most of what we put on the board was another screen. The one we picked was the only one that got kids off the screen entirely."
+              title="Six ideas that were all another screen"
+              intro="Everything we put on the board kept kids indoors looking at a device. The one we picked was the only one that didn't."
             />
 
             <Body>
-              Our first pass was a quiz app, an engaging learning platform, a
-              game-based lesson tool, something to manage overstimulation,
-              something for classroom anxiety, and a Minecraft world that
-              prompts kids to build things. Then someone wrote down &quot;kids
-              don&apos;t go outside.&quot;
+              The board filled up with screens. A quiz app. An engaging learning
+              platform. A game-based lesson tool. Something for
+              overstimulation, something for classroom anxiety, a Minecraft
+              world that prompts kids to build things. Six ideas, all of them
+              another reason to look at a tablet.
             </Body>
 
             <Body>
-              That last one was the only idea on the list that wasn&apos;t
-              another reason to look at a tablet. Given a theme about real
-              connection, building a seventh app to hold a child&apos;s
-              attention indoors felt like answering the wrong question. We
-              locked it in.
+              Then someone wrote down &quot;kids don&apos;t go outside,&quot;
+              which was the only line on the board that pointed away from the
+              screen. Given a brief about real connection, we took it.
+            </Body>
+
+            <Body>
+              The mechanic came together fast once we had that. A teacher sets a
+              challenge for the day and can split the class into groups. A group
+              finds something that matches, photographs it, and submits it
+              through the app. They earn XP and badges for what they find. Every
+              piece of that was on the whiteboard before 10:30, and the rest of
+              the day was working out what it would take to make it safe.
             </Body>
           </Section>
 
@@ -294,6 +322,26 @@ export default function GreenBuddiesPage() {
               label="THE CLASSROOM FEED"
               text="Kids can share a find to their class feed and see what everyone else found. The connection piece: same walk, forty different discoveries."
               pill="Social"
+            />
+
+            <ScreenGrid
+              columns={3}
+              screens={[
+                {
+                  src: "/projects/gb-camera.svg",
+                  caption: "Spot something on the list, tap the camera",
+                },
+                {
+                  src: "/projects/gb-learning-card.svg",
+                  caption:
+                    "Recognition confirms the find, then the learning card opens",
+                },
+                {
+                  src: "/projects/gb-feed.svg",
+                  caption:
+                    "Share to the classroom feed, scoped to one class only",
+                },
+              ]}
             />
           </Section>
 

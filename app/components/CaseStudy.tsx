@@ -271,7 +271,7 @@ export function ScreenGrid({
               : "sm:grid-cols-4"
 
     return (
-        <div className={`mt-12 grid grid-cols-2 gap-5 ${cols}`}>
+        <div className={`mt-12 grid grid-cols-2 gap-8 sm:gap-10 ${cols}`}>
             {screens.map((s, i) => (
                 <Reveal key={s.src} delay={i * 0.07}>
                     <Image
@@ -279,11 +279,11 @@ export function ScreenGrid({
                         alt={s.caption || ""}
                         width={420}
                         height={910}
-                        className="w-full rounded-[12px]"
+                        className="mx-auto w-full max-w-[220px] rounded-[12px]"
                     />
                     {s.caption && (
                         <p
-                            className="mt-3 text-[12px] leading-[1.4]"
+                            className="mx-auto mt-3 max-w-[220px] text-[12px] leading-[1.4]"
                             style={{ fontFamily: mono, color: "rgba(0,0,0,0.6)" }}
                         >
                             {s.caption}

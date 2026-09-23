@@ -30,7 +30,7 @@ export default function DesktopSidebar() {
     }
 
     return (
-        <div className="relative z-10 flex flex-row flex-wrap justify-center gap-5 px-4 pt-10 pb-4 md:absolute md:left-0 md:top-[26px] md:flex-col md:flex-nowrap md:justify-start md:gap-12 md:px-12 md:pt-12 md:pb-0">
+        <div className="relative z-10 flex flex-row flex-wrap justify-center gap-5 px-4 pt-10 pb-4 md:absolute md:left-0 md:top-[30px] md:flex-col md:flex-nowrap md:justify-start md:gap-16 md:px-15 md:pt-12 md:pb-0">
             {items.map((item) => (
                 <Link
                     key={item.label}
